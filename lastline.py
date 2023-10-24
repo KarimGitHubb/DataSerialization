@@ -14,9 +14,5 @@ for file in txtlist:
         dic['date'] = lines[2].strip()
         dic['feedback'] = lines[3].strip()
     response = requests.post("http://<corpweb-external-IP>/feedback/", data=dic)
-   # with open(file, 'r') as f:
-  #      for i in range(3):
- #           next(f)
-#        feedback = ' '.join(line.rstrip() for line in f)
 
 
